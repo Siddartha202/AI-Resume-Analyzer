@@ -1,0 +1,24 @@
+# Node.js
+node_modules/
+**/node_modules/
+
+# Java
+target/
+
+# React
+dist/
+build/
+
+# Environment files
+.env
+.env.*
+
+# Uploaded resumes
+backend/uploads/
+
+# IDE
+.vscode/
+.idea/
+
+# Logs
+*.log
