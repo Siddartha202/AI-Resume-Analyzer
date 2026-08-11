@@ -22,7 +22,8 @@ import java.util.Optional;
 @RequestMapping("/api/resumes")
 @CrossOrigin(origins = {
     "http://localhost:5173",
-    "https://ai-resume-analyzer-six-alpha.vercel.app"
+    "https://ai-resume-analyzer-six-alpha.vercel.app",
+    "https://ai-resume-analyzer-my7nw92yt-vijetha.vercel.app"
 })
 public class ResumeController {
 
