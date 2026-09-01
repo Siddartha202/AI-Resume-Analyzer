@@ -36,9 +36,21 @@ function Navbar() {
           </li>
 
           <li>
-            <button className="bg-blue-600 hover:bg-blue-700 px-4 py-2 rounded-lg transition">
+            <Link
+              to="/login"
+              className="bg-blue-600 hover:bg-blue-700 px-4 py-2 rounded-lg transition"
+            >
               Login
-            </button>
+            </Link>
+          </li>
+
+          <li>
+            <Link
+              to="/register"
+              className="border border-blue-500 hover:bg-blue-600 px-4 py-2 rounded-lg transition"
+            >
+              Register
+            </Link>
           </li>
 
         </ul>
