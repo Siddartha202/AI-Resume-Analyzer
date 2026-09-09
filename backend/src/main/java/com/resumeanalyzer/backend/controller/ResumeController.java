@@ -20,11 +20,12 @@ import java.util.Optional;
 
 @RestController
 @RequestMapping("/api/resumes")
-@CrossOrigin(origins = {
-    "http://localhost:5173",
-    "https://ai-resume-analyzer-six-alpha.vercel.app",
-    "https://ai-resume-analyzer-my7nw92yt-vijetha.vercel.app"
-})
+@CrossOrigin(
+    originPatterns = {
+        "http://localhost:5173",
+        "https://*.vercel.app"
+    }
+)
 public class ResumeController {
 
     @Autowired
