@@ -10,7 +10,6 @@ import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
 @RestController
-@RestController
 @RequestMapping("/api/auth")
 @CrossOrigin(
     originPatterns = {
