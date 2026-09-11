@@ -6,8 +6,7 @@ An AI-powered Resume Analyzer that evaluates resumes against a given job descrip
 
 ### 🌐 Frontend
 
-ai-resume-analyzer-six-alpha.vercel.app
-
+[🚀 Open AI Resume Analyzer](https://ai-resume-analyzer-88n5qw7z4-vijetha.vercel.app/)
 ### ⚙️ Backend API
 
 https://ai-resume-analyzer-qs8m.onrender.com/
