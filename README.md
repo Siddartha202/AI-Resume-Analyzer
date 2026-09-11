@@ -4,9 +4,15 @@ An AI-powered Resume Analyzer that evaluates resumes against a given job descrip
 
 ## 🚀 Live Demo
 
-Frontend: https://ai-resume-analyzer-my7nw92yt-vijetha.vercel.app/
+### 🌐 Frontend
 
-Backend: https://ai-resume-analyzer-production-0f76.up.railway.app/
+[https://ai-resume-analyzer-qs8m.onrender.com/](https://ai-resume-analyzer-88n5qw7z4-vijetha.vercel.app/)
+
+### ⚙️ Backend API
+
+https://ai-resume-analyzer-qs8m.onrender.com/
+
+> The frontend application is deployed on Vercel and the Spring Boot backend is deployed on Render.
 
 ## ✨ Features
 
@@ -16,13 +22,17 @@ Backend: https://ai-resume-analyzer-production-0f76.up.railway.app/
 - ✅ Identify matched skills
 - ❌ Identify missing skills
 - 💡 Generate resume improvement suggestions
+- 🔐 User registration and login
 - 💾 Store analyzed resume information
 - 📜 View resume analysis history
 - 🌐 Fully deployed application
+- ☁️ Cloud-hosted MySQL database
+- 🔗 REST API integration between frontend and backend
 
 ## 🛠️ Technologies Used
 
 ### Frontend
+
 - React.js
 - Vite
 - JavaScript
@@ -32,39 +42,58 @@ Backend: https://ai-resume-analyzer-production-0f76.up.railway.app/
 - React Toastify
 
 ### Backend
+
 - Java
 - Spring Boot
-- REST APIs
 - Spring Data JPA
 - Hibernate
+- REST APIs
 - Maven
+- Apache PDFBox / PDF parsing
+- ATS Analysis
+- Resume Analysis
 
 ### Database
+
 - MySQL
 - Aiven Cloud
 
 ### Deployment
+
 - Vercel – Frontend
-- Railway – Backend
+- Render – Backend
 - Aiven – Database
 
 ## 🏗️ Project Architecture
 
 ```text
-User
-  │
-  ▼
-React + Vite Frontend
-  │
-  │ Axios REST API
-  ▼
-Spring Boot Backend
-  │
-  ├── Resume Upload
-  ├── PDF Text Extraction
-  ├── ATS Analysis
-  ├── Skill Matching
-  └── Suggestions
-  │
-  ▼
-MySQL Database
+                         User
+                           │
+                           ▼
+                ┌─────────────────────┐
+                │   React + Vite      │
+                │      Frontend       │
+                │      Vercel         │
+                └──────────┬──────────┘
+                           │
+                           │ Axios REST API
+                           ▼
+                ┌─────────────────────┐
+                │    Spring Boot      │
+                │      Backend        │
+                │       Render        │
+                └──────────┬──────────┘
+                           │
+             ┌─────────────┼─────────────┐
+             │             │             │
+             ▼             ▼             ▼
+       Resume Upload   ATS Analysis   Authentication
+             │             │             │
+             ▼             ▼             ▼
+       PDF Extraction  Skill Matching  Login/Register
+                           │
+                           ▼
+                ┌─────────────────────┐
+                │    MySQL Database   │
+                │       Aiven         │
+                └─────────────────────┘
